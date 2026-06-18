@@ -1,13 +1,13 @@
-Risk Scoring & Prioritization System
-Overview
+<h1>**Risk Scoring & Prioritization System**</h1>
+<h2>Overview</h2>
 
-This project was developed for the AI/ML Intelligence Hackathon under the Risk Scoring & Prioritization track.
+This project is developed for the AI/ML Intelligence Hackathon under the Risk Scoring & Prioritization track.
 
 The objective is to help financial crime analysts identify high-risk accounts by assigning an account-level risk score based on transaction patterns, KYC attributes, and behavioral signals. Rather than treating all accounts equally, the system prioritizes accounts that are most likely to be involved in money laundering activities.
 
 The final solution combines machine learning, account-level aggregation, explainable AI, and risk ranking to create an analyst-friendly investigation workflow.
 
-Problem Statement
+<h2>Problem Statement</h2>
 
 Financial institutions process thousands of transactions daily, making manual investigation of every account impractical. Analysts require a reliable risk scoring mechanism that can:
 
@@ -44,14 +44,15 @@ Dashboard Development
 Models Evaluated
 
 
-
-
+<h2>Model Used</h2>
+Logistic Regression
+Artificial Neural Network (ANN)
 Random Forest
 LightGBM
 
 The final model was selected based on performance across highly imbalanced data, with a focus on precision and ranking quality.
 
-Explainability
+<h2>Explainability</h2>
 
 To ensure transparency and analyst trust, SHAP explanations are used to identify the factors contributing to each risk score.
 
@@ -65,19 +66,22 @@ Evaluation Metrics
 
 Because suspicious transactions represent a small fraction of the dataset, traditional accuracy is not sufficient.
 
-Metrics used:
+<h2>Metrics used</h2>
 
-PR-AUC
-ROC-AUC
-Recall
-F1 Score
-Precision@K
-Ranking Performance
-Repository Structure
-aml.ipynb
-dashboard
-app.py
-Technical documentation
-slides
+PR-AUC<br>
+ROC-AUC<br>
+Recall<br>
+F1 Score<br>
+Precision@K<br>
+Ranking Performance<br>
+<br>
+
+<h2>Repository Structure</h2>
+aml.ipynb<br>
+dashboard<br>
+app.py<br>
+Technical documentation<br>
+slides<br>
+<br> 
 Running the Dashboard
 streamlit run dashboard/app.py
